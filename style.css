@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 1em;
+  position: relative;
 }
 
 .form-control input {
@@ -54,6 +55,24 @@ body {
 
 .form-feedback {
   padding-top: 0.3em;
+}
+
+.form-feedback-icon {
+  position: absolute;
+  padding-top: 20px;
+  right: 0.5em;
+}
+
+.form-control.success .form-feedback-icon {
+  color: #09c372;
+  font-size: 1rem;
+  height: 1em;
+}
+
+.form-control.error .form-feedback-icon {
+  color: #ff3860;
+  font-size: 1rem;
+  height: 1em;
 }
 
 .form-button {

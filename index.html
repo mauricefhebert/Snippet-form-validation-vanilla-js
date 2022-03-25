@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/fb001a2179.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="./app.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <!-- code -->
+    <!-- 
+      <i class="fa-solid fa-circle-check"></i>
+      <i class="fa-solid fa-circle-xmark"></i>
+     -->
     <div class="container">
       <form id="form" method="post">
         <h1 id="form-title">Sign up</h1>
@@ -18,24 +22,28 @@
           <label for="username" class="form-label">Username: </label>
           <input type="text" name="username" id="username" class="form-input" />
           <div class="form-feedback"></div>
+          <span class="form-feedback-icon"></span>
         </div>
         <!--? Email -->
         <div class="form-control">
           <label for="email" class="form-label">Email: </label>
           <input type="text" name="email" id="email" class="form-input" />
           <div class="form-feedback"></div>
+          <span class="form-feedback-icon"></span>
         </div>
         <!--? Password -->
         <div class="form-control">
           <label for="password" class="form-label">Password: </label>
           <input type="password" name="password" id="password" class="form-input" />
           <div class="form-feedback"></div>
+          <span class="form-feedback-icon"></span>
         </div>
         <!--? Password confirmation -->
         <div class="form-control">
           <label for="password-confirmation" class="form-label">Password Confirmation: </label>
           <input type="password" name="password-confirmation" id="password-confirmation" class="form-input" />
           <div class="form-feedback"></div>
+          <span class="form-feedback-icon"></span>
         </div>
         <div class="form-button">
           <button type="submit" class="btn btn-submit">Submit</button>
