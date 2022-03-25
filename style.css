@@ -1,0 +1,85 @@
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+#form {
+  background-color: blanchedalmond;
+  width: 400px;
+  margin: 20vh auto 0 auto;
+  padding: 1.2rem;
+  font-size: 1rem;
+  border-radius: 0.2em;
+}
+
+#form-title {
+  text-align: center;
+  margin: 0;
+  color: #333;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-control input {
+  height: 1.7em;
+  border: 1px solid;
+}
+
+.form-control input:focus {
+  outline: 0;
+}
+
+.form-control.success input {
+  border-color: #09c372;
+}
+
+.form-control.error input {
+  border-color: #ff3860;
+}
+
+.form-control.success .form-feedback {
+  color: #09c372;
+  font-size: 1rem;
+  height: 1em;
+}
+
+.form-control.error .form-feedback {
+  color: #ff3860;
+  font-size: 1rem;
+  height: 1em;
+}
+
+.form-feedback {
+  padding-top: 0.3em;
+}
+
+.form-button {
+  display: flex;
+  gap: 1em;
+}
+
+.btn {
+  border: 1px solid black;
+  padding: 0.5em 0.7em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: rgb(109, 182, 255);
+}
+
+.btn-submit:hover {
+  background-color: rgb(72, 161, 250);
+}
+
+.btn-reset {
+  background-color: lightgray;
+}
+
+.btn-reset:hover {
+  background-color: rgb(167, 167, 167);
+}

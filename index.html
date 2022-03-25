@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- code -->
+    <div class="container">
+      <form id="form" method="post">
+        <h1 id="form-title">Sign up</h1>
+        <!--? Nom -->
+        <div class="form-control">
+          <label for="username" class="form-label">Username: </label>
+          <input type="text" name="username" id="username" class="form-input" />
+          <div class="form-feedback"></div>
+        </div>
+        <!--? Email -->
+        <div class="form-control">
+          <label for="email" class="form-label">Email: </label>
+          <input type="text" name="email" id="email" class="form-input" />
+          <div class="form-feedback"></div>
+        </div>
+        <!--? Password -->
+        <div class="form-control">
+          <label for="password" class="form-label">Password: </label>
+          <input type="password" name="password" id="password" class="form-input" />
+          <div class="form-feedback"></div>
+        </div>
+        <!--? Password confirmation -->
+        <div class="form-control">
+          <label for="password-confirmation" class="form-label">Password Confirmation: </label>
+          <input type="password" name="password-confirmation" id="password-confirmation" class="form-input" />
+          <div class="form-feedback"></div>
+        </div>
+        <div class="form-button">
+          <button type="submit" class="btn btn-submit">Submit</button>
+          <button type="reset" class="btn btn-reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!-- 
+- The user must provide an email address
+- The password must be at least 10 characters long and contain at least one uppercase letter, number, and special character.
+- We should show error messages to the user when they don't meet the requirements
+ -->
